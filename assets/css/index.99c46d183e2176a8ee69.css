@@ -20,6 +20,7 @@ body {
   top: 0;
   left: 0;
   outline: none;
+  z-index: 10;
 }
 
 main {
@@ -71,6 +72,15 @@ button:hover {
   border: 1px solid #494646;
 }
 
+#seo-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+  max-width: 800px;
+  padding: 2rem;
+}
 
 #wrapper 			{ 
     position: absolute;
