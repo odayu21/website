@@ -15,6 +15,22 @@ body {
   overflow-x: hidden;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;         /* added in modern versions */
+    border: 0;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+}
+
 .webgl {
   position: fixed;
   top: 0;
@@ -81,6 +97,8 @@ button:hover {
   max-width: 800px;
   padding: 2rem;
 }
+
+
 
 #wrapper 			{ 
     position: absolute;
@@ -223,3 +241,4 @@ ul li a {
       padding-bottom: 10px;
   }
 }
+
