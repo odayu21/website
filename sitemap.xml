@@ -6,5 +6,10 @@
   <url><loc>https://yuoda.nl/news.html</loc><priority>0.8</priority></url>
   <url><loc>https://yuoda.nl/agenda.html</loc><priority>0.8</priority></url>
   <url><loc>https://yuoda.nl/contact.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yuoda.nl/past_event.html</loc><priority>0.6</priority></url>
 
-  </urlset>
+  <url><loc>https://yuoda.nl/orthorealm.html</loc><priority>0.7</priority></url>
+  <url><loc>https://yuoda.nl/orthorealmHQ.html</loc><priority>0.7</priority></url>
+  <url><loc>https://yuoda.nl/hyperCubeDemo.html</loc><priority>0.7</priority></url>
+  <url><loc>https://yuoda.nl/hyperSphere.html</loc><priority>0.7</priority></url>
+</urlset>
