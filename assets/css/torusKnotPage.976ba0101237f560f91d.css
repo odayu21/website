@@ -14,13 +14,13 @@
     /* background-image: url("./images/bg5.jpg"); */
     background-size: cover;
     font-size: 24px;
-    overscroll-behavior-y: none;
+    /* overscroll-behavior-y: none; /* maybe delete this */
   }
   
   body {
     background-color: #343434;
     overflow-x: hidden;
-    overscroll-behavior-y: none;
+    /* overscroll-behavior-y: none; /* maybe delete this */
     /* backdrop-filter: blur(8px); */
   }
   
