@@ -1,18 +1,19 @@
 {
   "name": "Yu Oda - Composer",
   "short_name": "Yu Oda",
+  "description": "Composer based in the Netherlands working across acoustic and electroacoustic music, live electronics, and audiovisual multimedia projects.",  
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ],
   "theme_color": "#ffffff",
