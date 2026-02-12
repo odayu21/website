@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Particles System - Yu Oda</title><meta name=description content="An experimental GPU-based particle system demonstration by Yu Oda, utilizing custom GLSL shaders for real-time flocking simulation."><link rel=canonical href=https://yuoda.nl/particlesSystem.html><meta property=og:image content=https://yuoda.nl/web-app-manifest-512x512.png><meta property=og:type content=website><link rel=icon type=image/png href=/favicon-96x96.png sizes=96x96><link rel=icon type=image/svg+xml href=/favicon.svg><link rel="shortcut icon" href=/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><script defer=defer src=particlesSystem.0f46236ddf8930da3655.js></script><link href=assets/css/particlesSystem.f873d7666cb19241ed90.css rel=stylesheet></head><body><script id=fragmentShaderPosition type=x-shader/x-fragment>uniform float time;
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Particles System - Yu Oda</title><meta name="description" content="An experimental GPU-based particle system demonstration by Yu Oda, utilizing custom GLSL shaders for real-time flocking simulation."><link rel="canonical" href="https://yuoda.nl/particlesSystem.html"><meta property="og:image" content="https://yuoda.nl/web-app-manifest-512x512.png"><meta property="og:type" content="website"><link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><script defer="defer" src="particlesSystem.0f46236ddf8930da3655.js"></script><link href="assets/css/particlesSystem.f873d7666cb19241ed90.css" rel="stylesheet"></head><body><script id="fragmentShaderPosition" type="x-shader/x-fragment">uniform float time;
 			uniform float delta;
 
 			void main()	{
@@ -16,7 +16,7 @@
 
 				gl_FragColor = vec4( position + velocity * delta * 15. , phase );
 
-			}</script><script id=fragmentShaderVelocity type=x-shader/x-fragment>uniform float time;
+			}</script><script id="fragmentShaderVelocity" type="x-shader/x-fragment">uniform float time;
 			uniform float testing;
 			uniform float delta; // about 0.016
 			uniform float separationDistance; // 20
@@ -170,7 +170,7 @@
 
 				gl_FragColor = vec4( velocity, 1.0 );
 
-			}</script><script type=x-shader/x-vertex id=birdVS>attribute vec2 reference;
+			}</script><script type="x-shader/x-vertex" id="birdVS">attribute vec2 reference;
 			attribute float birdVertex;
 
 			attribute vec3 birdColor;
@@ -230,7 +230,7 @@
 
 				vColor = vec4( birdColor, 1.0 );
 				gl_Position = projectionMatrix *  viewMatrix  * vec4( newPosition, 1.0 );
-			}</script><script type=x-shader/x-fragment id=birdFS>varying vec4 vColor;
+			}</script><script type="x-shader/x-fragment" id="birdFS">varying vec4 vColor;
 			varying float z;
 
 			uniform vec3 color;
@@ -240,4 +240,4 @@
 				float z2 = 0.2 + ( 1000. - z ) / 1000. * vColor.x;
 				gl_FragColor = vec4( z2, z2, z2, 1. );
 
-			}</script><canvas class=webgl></canvas></body></html>
+			}</script><canvas class="webgl"></canvas></body></html>
