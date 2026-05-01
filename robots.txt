@@ -2,12 +2,6 @@ User-agent: *
 Allow: /
 # Block the download folder from search results
 Disallow: /download/
-# Block unlisted/test files from search results
-Disallow: /particlesSystem.html
-Disallow: /test3D.html
-Disallow: /orthorealmHQPP.html
-Disallow: /orthoHyperCube.html
-Disallow: /motivation_letter_26-022.html
 
 # Avoid AI training (OpenAI, Google AI, and Common Crawl)
 User-agent: GPTBot
